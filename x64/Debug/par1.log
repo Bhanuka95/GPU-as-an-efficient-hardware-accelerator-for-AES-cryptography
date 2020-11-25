@@ -1,7 +1,9 @@
 ﻿  Compiling CUDA source file kernel.cu...
   
   D:\Education\Uni\Sem 6\HPC Project Sem 6\Implementation\Parallel Implementation\temp2\par1>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc140.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\Education\Uni\Sem 6\HPC Project Sem 6\Implementation\Parallel Implementation\temp2\par1\kernel.cu" 
+D:/Education/Uni/Sem 6/HPC Project Sem 6/Implementation/Parallel Implementation/temp2/par1/kernel.cu(269): warning : variable "message" was declared but never referenced
+  
   kernel.cu
-D:/Education/Uni/Sem 6/HPC Project Sem 6/Implementation/Parallel Implementation/temp2/par1/kernel.cu(278): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:/Education/Uni/Sem 6/HPC Project Sem 6/Implementation/Parallel Implementation/temp2/par1/kernel.cu(303): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   par1.vcxproj -> D:\Education\Uni\Sem 6\HPC Project Sem 6\Implementation\Parallel Implementation\temp2\par1\x64\Debug\par1.exe
   par1.vcxproj -> D:\Education\Uni\Sem 6\HPC Project Sem 6\Implementation\Parallel Implementation\temp2\par1\x64\Debug\par1.pdb (Full PDB)

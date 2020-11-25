@@ -14,6 +14,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\cwchar
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\eh.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\emmintrin.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\exception
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\fstream
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\immintrin.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\initializer_list
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\intrin.h
@@ -33,7 +34,6 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\smmintrin.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdexcept
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\stdint.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\streambuf
-C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\string
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\system_error
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\tmmintrin.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\typeinfo
@@ -47,6 +47,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime_new.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime_new_debug.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime_string.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vcruntime_typeinfo.h
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\vector
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\wmmintrin.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xatomic0.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xfacet
@@ -56,6 +57,7 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocale
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocinfo
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocinfo.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocnum
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmemory0
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xmmintrin.h
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xstddef

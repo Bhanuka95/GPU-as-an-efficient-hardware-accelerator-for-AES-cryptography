@@ -2,9 +2,12 @@
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 #include <time.h>
-#include <string>
-
+#include <string.h>
+#include <vector>
+#include <fstream>
 #include <stdio.h>
+#include <stdlib.h>
+
 
 unsigned char s_box[256] = {
 	0x63 ,0x7C ,0x77 ,0x7B ,0xF2 ,0x6B ,0x6F ,0xC5 ,0x30 ,0x01 ,0x67 ,0x2B ,0xFE ,0xD7 ,0xAB ,0x76
@@ -264,6 +267,28 @@ int main() {
 	printf("________________________________________Welcome to the AES encryption world with CUDA_________________________________________\n\n\n");
 	
 	unsigned char message[] = "This is a message we will encrypt with AES!";
+
+	FILE *fp;
+	long long lSize;
+	unsigned char *buffer = 0;
+
+	fp = fopen("input.txt", "rb");
+	if (!fp) perror("input.txt"), exit(1);
+
+	fseek(fp, 0L, SEEK_END);
+	lSize = ftell(fp); //assign the file size
+	rewind(fp);
+
+	//memory allocation for the reading
+	buffer = (unsigned char*)calloc(1, lSize + 1);
+	if (!buffer) fclose(fp), fputs("memory alloc fails", stderr), exit(1);
+
+	if (1 != fread(buffer, lSize, 1, fp))
+		fclose(fp), free(buffer), fputs("entire read fails", stderr), exit(1);
+
+	printf("________________________________Congratulations...File reading process done!!!___________________________\n\n\n");
+	
+	
 	
 
 	unsigned char key[16] =
@@ -275,7 +300,7 @@ int main() {
 	};
 
 	//int originallen = strlen((const char*)message);
-	int originallen = strlen((const char*)message);
+	int originallen = strlen((const char*)buffer);
 	int lenOfPaddedMessage = originallen;
 
 	if (lenOfPaddedMessage % 16 != 0) {
@@ -289,7 +314,8 @@ int main() {
 		}
 		else
 		{
-			paddedMessage[i] = message[i];
+			//paddedMessage[i] = message[i];
+			paddedMessage[i] = buffer[i];
 		}
 	}
 
@@ -303,8 +329,10 @@ int main() {
 
 	printf("Original Message\n");
 	for (int i = 0; i < originallen; i++) {
-		//cout << message[i];
-		printf("%c", message[i]);
+		//printf("%c", message[i]);
+	}
+	for (int i = 0; i < lSize; i++) {
+		//printf("%c", buffer[i]);
 	}
 
 	printf("\n\n\nEncrypted Message: \n");
@@ -318,7 +346,8 @@ int main() {
 	
 	printf("\n\n\n");
 
-
+	fclose(fp);
+	free(buffer);
 
 	return 0;
 }
